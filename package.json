@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "vite build",
+    "buildT": "tailwindcss -i ./styles.css -o ./dist/output.css",
+    "watch": "tailwindcss -i ./styles.css -o ./dist/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

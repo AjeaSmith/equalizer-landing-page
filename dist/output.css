@@ -566,24 +566,32 @@ video {
   margin-bottom: 4rem;
 }
 
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-9 {
-  margin-top: 2.25rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .w-1\/2 {
   width: 50%;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-screen-md {
+  max-width: 768px;
+}
+
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .bg-sm-image {
@@ -602,6 +610,26 @@ video {
   background-repeat: no-repeat;
 }
 
+.text-40 {
+  font-size: 2.5rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.leading-26 {
+  line-height: 1.625rem;
+}
+
+.leading-48 {
+  line-height: 3rem;
+}
+
 * {
   font-family: "IBM Plex Sans", sans-serif;
 }
@@ -614,13 +642,41 @@ video {
 }
 
 @media (min-width: 1023px) {
+  .max-char-md {
+    max-width: 25ch;
+  }
+
   .tablet\:bg-md-image {
     background-image: url('/assets/bg-main-tablet.png');
+  }
+
+  .tablet\:text-64 {
+    font-size: 4rem;
+  }
+
+  .tablet\:text-lg {
+    font-size: 1.125rem;
+  }
+
+  .tablet\:leading-28 {
+    line-height: 1.75rem;
+  }
+
+  .tablet\:leading-64 {
+    line-height: 4rem;
   }
 }
 
 @media (min-width: 1439px) {
   .desktop\:bg-lg-image {
     background-image: url('/assets/bg-main-desktop.png');
+  }
+
+  .desktop\:text-88 {
+    font-size: 5.5rem;
+  }
+
+  .desktop\:leading-88 {
+    line-height: 5.5rem;
   }
 }

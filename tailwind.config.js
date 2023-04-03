@@ -19,6 +19,11 @@ module.exports = {
         '34': '2.125rem',
         '52': '3.25rem',
         '88': '5.5rem',
+      },
+      backgroundImage: {
+        'sm-image': "url('/assets/bg-main-mobile.png')",
+        'md-image': "url('/assets/bg-main-tablet.png')",
+        'lg-image': "url('/assets/bg-main-desktop.png')"
       }
     }
   },

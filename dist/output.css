@@ -562,36 +562,65 @@ video {
   }
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
+.w-1\/2 {
+  width: 50%;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.bg-sm-image {
+  background-image: url('/assets/bg-main-mobile.png');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 * {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+.container {
+  --max-width: 1110px;
+  --padding: 1.5rem;
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+}
+
 @media (min-width: 1023px) {
-  .tablet\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+  .tablet\:bg-md-image {
+    background-image: url('/assets/bg-main-tablet.png');
+  }
+}
+
+@media (min-width: 1439px) {
+  .desktop\:bg-lg-image {
+    background-image: url('/assets/bg-main-desktop.png');
   }
 }

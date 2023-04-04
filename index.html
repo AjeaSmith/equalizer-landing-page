@@ -21,10 +21,15 @@
 		<title>Frontend Mentor | Equalizer landing page</title>
 	</head>
 	<body
-		class="bg-sm-image bg-no-repeat bg-cover bg-center tablet:bg-md-image desktop:bg-lg-image"
+		class="bg-sm-image bg-no-repeat tablet:bg-md-image desktop:bg-lg-image desktop:bg-cover"
 	>
-		<main>
-			<header class="mt-10">
+		<main class="overflow-hidden">
+			<header class="pt-10 relative">
+				<img
+					class="hidden tablet:block absolute -right-10 bottom-8 desktop:bottom-3 desktop:right-0"
+					src="/assets/bg-pattern-1.svg"
+					alt=""
+				/>
 				<div class="container">
 					<div>
 						<img
@@ -33,18 +38,20 @@
 							alt="equalizer"
 						/>
 
-						<div class="max-w-lg">
+						<div class="max-w-lg desktop:max-w-4xl">
 							<h1
 								class="text-40 leading-48 font-semibold tablet:text-64 tablet:leading-64 desktop:text-88 desktop:leading-88"
 							>
 								We make your music sound extraordinary.
 							</h1>
-							<p class="text-base leading-26 mt-5 mb-16 tablet:text-lg tablet:leading-28">
-								A system audio equalizer specifically designed for
-								Android and iOS. Freely tune the way your music
-								sounds with a professional grade parametric EQ &
-								volume mixer. Control bass, mids, treble, gain
-								control, reverb, and more!
+							<p
+								class="text-base leading-26 mt-5 mb-16 tablet:text-lg tablet:leading-28 desktop:text-xl desktop:leading-34"
+							>
+								A system audio equalizer specifically designed
+								for Android and iOS. Freely tune the way your
+								music sounds with a professional grade
+								parametric EQ & volume mixer. Control bass,
+								mids, treble, gain control, reverb, and more!
 							</p>
 						</div>
 					</div>

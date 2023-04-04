@@ -6,6 +6,9 @@
 	font-family: "IBM Plex Sans", sans-serif;
 }
 
+body {
+	background-position: 50px -250px;
+}
 .container {
 	--max-width: 1110px;
 	--padding: 1.5rem;
@@ -14,7 +17,19 @@
 }
 
 @media (min-width: 1023px) {
-	.max-char-md {
-		max-width: 25ch;
+	body {
+		background-position: -230px -230px;
+	}
+}
+@media (min-width: 1365px) {
+	body {
+		background-size: cover;
+		background-position: -480px -530px;
+	}
+}
+@media (min-width: 1439px) {
+	body {
+		background-size: cover;
+		background-position: 60% -200px;
 	}
 }

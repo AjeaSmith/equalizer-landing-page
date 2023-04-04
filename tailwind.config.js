@@ -24,6 +24,7 @@ module.exports = {
         '88': '5.5rem',
       },
       backgroundImage: {
+        'pattern-1': "url('/assets/bg-pattern-1.svg')",
         'sm-image': "url('/assets/bg-main-mobile.png')",
         'md-image': "url('/assets/bg-main-tablet.png')",
         'lg-image': "url('/assets/bg-main-desktop.png')"

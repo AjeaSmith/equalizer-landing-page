@@ -562,52 +562,56 @@ video {
   }
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
+.absolute {
+  position: absolute;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.relative {
+  position: relative;
+}
+
+.-right-10 {
+  right: -2.5rem;
+}
+
+.bottom-8 {
+  bottom: 2rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .mt-5 {
   margin-top: 1.25rem;
 }
 
+.hidden {
+  display: none;
+}
+
 .w-1\/2 {
   width: 50%;
-}
-
-.max-w-md {
-  max-width: 28rem;
-}
-
-.max-w-sm {
-  max-width: 24rem;
-}
-
-.max-w-screen-md {
-  max-width: 768px;
 }
 
 .max-w-lg {
   max-width: 32rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .bg-sm-image {
   background-image: url('/assets/bg-main-mobile.png');
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
-}
-
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-40 {
@@ -634,6 +638,10 @@ video {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+body {
+  background-position: 50px -250px;
+}
+
 .container {
   --max-width: 1110px;
   --padding: 1.5rem;
@@ -642,8 +650,28 @@ video {
 }
 
 @media (min-width: 1023px) {
-  .max-char-md {
-    max-width: 25ch;
+  body {
+    background-position: -230px -230px;
+  }
+}
+
+@media (min-width: 1365px) {
+  body {
+    background-size: cover;
+    background-position: -480px -530px;
+  }
+}
+
+@media (min-width: 1439px) {
+  body {
+    background-size: cover;
+    background-position: 60% -200px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .tablet\:block {
+    display: block;
   }
 
   .tablet\:bg-md-image {
@@ -668,15 +696,75 @@ video {
 }
 
 @media (min-width: 1439px) {
+  .desktop\:bottom-56 {
+    bottom: 14rem;
+  }
+
+  .desktop\:right-0 {
+    right: 0px;
+  }
+
+  .desktop\:-bottom-1 {
+    bottom: -0.25rem;
+  }
+
+  .desktop\:-bottom-2 {
+    bottom: -0.5rem;
+  }
+
+  .desktop\:-bottom-3 {
+    bottom: -0.75rem;
+  }
+
+  .desktop\:-bottom-4 {
+    bottom: -1rem;
+  }
+
+  .desktop\:bottom-4 {
+    bottom: 1rem;
+  }
+
+  .desktop\:bottom-3 {
+    bottom: 0.75rem;
+  }
+
+  .desktop\:max-w-xl {
+    max-width: 36rem;
+  }
+
+  .desktop\:max-w-2xl {
+    max-width: 42rem;
+  }
+
+  .desktop\:max-w-3xl {
+    max-width: 48rem;
+  }
+
+  .desktop\:max-w-4xl {
+    max-width: 56rem;
+  }
+
   .desktop\:bg-lg-image {
     background-image: url('/assets/bg-main-desktop.png');
+  }
+
+  .desktop\:bg-cover {
+    background-size: cover;
   }
 
   .desktop\:text-88 {
     font-size: 5.5rem;
   }
 
+  .desktop\:text-xl {
+    font-size: 1.25rem;
+  }
+
   .desktop\:leading-88 {
     line-height: 5.5rem;
+  }
+
+  .desktop\:leading-34 {
+    line-height: 2.125rem;
   }
 }

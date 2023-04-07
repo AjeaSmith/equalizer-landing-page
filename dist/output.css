@@ -574,12 +574,25 @@ video {
   right: -2.5rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .bottom-8 {
   bottom: 2rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
 }
 
 .mt-5 {
@@ -602,12 +615,44 @@ video {
   overflow: hidden;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 24 38 / var(--tw-bg-opacity));
+}
+
+.bg-darkOrange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 116 83 / var(--tw-bg-opacity));
+}
+
+.bg-pattern-2 {
+  background-image: url('/assets/bg-pattern-2.svg');
+}
+
 .bg-sm-image {
   background-image: url('/assets/bg-main-mobile.png');
 }
 
+.bg-top {
+  background-position: top;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .pt-10 {
@@ -634,6 +679,11 @@ video {
   line-height: 3rem;
 }
 
+.text-whiteClr {
+  --tw-text-opacity: 1;
+  color: rgb(252 250 249 / var(--tw-text-opacity));
+}
+
 * {
   font-family: "IBM Plex Sans", sans-serif;
 }
@@ -649,9 +699,30 @@ body {
   margin-inline: auto;
 }
 
+section .img {
+  width: 208px;
+  top: -100px;
+  left: 0;
+  right: 0;
+  max-width: 312px;
+}
+
+.section2:first-child {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 @media (min-width: 1023px) {
   body {
     background-position: -230px -230px;
+  }
+
+  .section2:first-child {
+    --max-width: 1110px;
+    --padding: 1.5rem;
+    width: min(var(--max-width), 100% - var(--padding) * 2);
+    margin-inline: auto;
   }
 }
 
@@ -696,48 +767,16 @@ body {
 }
 
 @media (min-width: 1439px) {
-  .desktop\:bottom-56 {
-    bottom: 14rem;
+  .desktop\:bottom-3 {
+    bottom: 0.75rem;
   }
 
   .desktop\:right-0 {
     right: 0px;
   }
 
-  .desktop\:-bottom-1 {
-    bottom: -0.25rem;
-  }
-
-  .desktop\:-bottom-2 {
-    bottom: -0.5rem;
-  }
-
-  .desktop\:-bottom-3 {
-    bottom: -0.75rem;
-  }
-
-  .desktop\:-bottom-4 {
-    bottom: -1rem;
-  }
-
-  .desktop\:bottom-4 {
-    bottom: 1rem;
-  }
-
-  .desktop\:bottom-3 {
-    bottom: 0.75rem;
-  }
-
-  .desktop\:max-w-xl {
-    max-width: 36rem;
-  }
-
-  .desktop\:max-w-2xl {
-    max-width: 42rem;
-  }
-
-  .desktop\:max-w-3xl {
-    max-width: 48rem;
+  .desktop\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .desktop\:max-w-4xl {
@@ -760,11 +799,11 @@ body {
     font-size: 1.25rem;
   }
 
-  .desktop\:leading-88 {
-    line-height: 5.5rem;
-  }
-
   .desktop\:leading-34 {
     line-height: 2.125rem;
+  }
+
+  .desktop\:leading-88 {
+    line-height: 5.5rem;
   }
 }

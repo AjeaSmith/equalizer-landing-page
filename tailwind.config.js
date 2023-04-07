@@ -7,7 +7,7 @@ module.exports = {
         teal: '#66E2DC',
         darkOrange: '#FA7453',
         lightOrange: '#FFB964',
-        white: '#FCFAF9',
+        whiteClr: '#FCFAF9',
         black: '#191826'
       },
       screens: {
@@ -25,6 +25,7 @@ module.exports = {
       },
       backgroundImage: {
         'pattern-1': "url('/assets/bg-pattern-1.svg')",
+        'pattern-2': "url('/assets/bg-pattern-2.svg')",
         'sm-image': "url('/assets/bg-main-mobile.png')",
         'md-image': "url('/assets/bg-main-tablet.png')",
         'lg-image': "url('/assets/bg-main-desktop.png')"

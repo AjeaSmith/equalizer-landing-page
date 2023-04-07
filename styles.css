@@ -9,6 +9,7 @@
 body {
 	background-position: 50px -250px;
 }
+
 .container {
 	--max-width: 1110px;
 	--padding: 1.5rem;
@@ -16,9 +17,29 @@ body {
 	margin-inline: auto;
 }
 
+section .img {
+	width: 208px;
+	top: -100px;
+	left: 0;
+	right: 0;
+	max-width: 312px;
+}
+
+.section2:first-child {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
 @media (min-width: 1023px) {
 	body {
 		background-position: -230px -230px;
+	}
+	.section2:first-child {
+		--max-width: 1110px;
+		--padding: 1.5rem;
+		width: min(var(--max-width), 100% - var(--padding) * 2);
+		margin-inline: auto;
 	}
 }
 @media (min-width: 1365px) {

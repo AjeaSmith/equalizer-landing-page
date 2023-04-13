@@ -8,10 +8,10 @@ module.exports = {
         darkOrange: '#FA7453',
         lightOrange: '#FFB964',
         whiteClr: '#FCFAF9',
-        black: '#191826'
+        blackClr: '#191826'
       },
       screens: {
-      'tablet': '1023px',
+      'tablet': '767px',
       'desktop': '1439px',
       },
       lineHeight: {

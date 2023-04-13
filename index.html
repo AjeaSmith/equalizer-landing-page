@@ -26,7 +26,7 @@
 		<main class="overflow-hidden">
 			<header class="pt-10 relative mb-40">
 				<img
-					class="hidden tablet:block absolute -right-10 bottom-8 desktop:bottom-3 desktop:right-0"
+					class="hidden tablet:block -z-10 absolute -right-10 bottom-8 desktop:bottom-3 desktop:right-0"
 					src="/assets/bg-pattern-1.svg"
 					alt=""
 				/>
@@ -58,64 +58,83 @@
 				</div>
 			</header>
 			<section>
-				<div class="section2 mx-auto" style="height: 730px">
+				<div
+					class="section2 relative mx-auto border-2 border-green-700 tablet:container"
+				>
 					<div
-						class="relative rounded-xl bg-pattern-2 bg-black bg-no-repeat bg-top"
-						style="height: 95%"
+						class="absolute w-full rounded-xl bg-pattern-2 bg-black bg-no-repeat bg-top"
+						style="height: 600px"
 					>
 						<img
-							class="img w-1/2 mx-auto absolute"
+							class="img mx-auto absolute"
 							src="/assets/illustration-app.png"
 							alt=""
 						/>
-						<div
-							class="premiun_content text-whiteClr bg-darkOrange rounded-xl bottom-0 absolute px-9 py-12"
-						>
-							<h2>Premium EQ</h2>
-							<p>
-								Get expert-level control with a robust
-								equalizer, volume mixer, and spatial audio. Take
-								your listening experience to a whole new level
-								and access all our incredible features!
-							</p>
-							<p><span>$4</span> / month</p>
+					</div>
+					<div
+						class="premium_content absolute text-whiteClr bg-darkOrange rounded-xl bottom-10 px-9 py-12"
+					>
+						<h2 class="text-32 font-bold desktop:text-40">
+							Premium EQ
+						</h2>
+						<p class="mt-3 mb-9 leading-28">
+							Get expert-level control with a robust equalizer,
+							volume mixer, and spatial audio. Take your listening
+							experience to a whole new level and access all our
+							incredible features!
+						</p>
+						<p class="mb-8">
+							<span class="text-64 font-bold">$4</span> / month
+						</p>
 
-							<div>
-								<button><span>icon</span> iOS Download</button>
-								<button>
-									<span>icon</span> Android Download
-								</button>
-							</div>
+						<div class="flex flex-col">
+							<button
+								class="flex justify-center mb-4 bg-blackClr border-none rounded-lg py-4"
+							>
+								<img
+									class="mr-2"
+									src="assets/icon-apple.svg"
+									alt="apple icon"
+								/>
+								<span class="font-bold">iOS Download</span>
+							</button>
+							<button
+								class="text-blackClr flex justify-center bg-whiteClr border-none rounded-lg py-4"
+							>
+								<img
+									class="mr-2"
+									src="assets/icon-android.svg"
+									alt="android icon"
+								/>
+								<span class="font-bold">Android Download</span>
+							</button>
 						</div>
 					</div>
 				</div>
 			</section>
-			<footer>
-				<div class="container">
-					<section>
-						<img src="/assets/logo.svg" alt="equalizer" />
-						<p>
-							All rights reserved © Equalizer 2021 Have any
-							problems? Contact us via social media or email us at
-							equalizer@example.com
-						</p>
-						<div>
-							<img
-								src="assets/icon-facebook.svg"
-								alt="icon-facebook"
-							/>
-							<img
-								src="assets/icon-instagram.svg"
-								alt="icon-instagram"
-							/>
-							<img
-								src="assets/icon-twitter.svg"
-								alt="icon-twitter"
-							/>
-						</div>
-					</section>
-				</div>
-			</footer>
 		</main>
+		<footer>
+			<div class="container">
+				<section>
+					<img src="/assets/logo.svg" alt="equalizer" />
+					<p>
+						All rights reserved © Equalizer 2021 Have any problems?
+						Contact us via social media or email us at
+						equalizer@example.com
+					</p>
+					<div>
+						<img
+							src="assets/icon-facebook.svg"
+							alt="icon-facebook"
+						/>
+						<img
+							src="assets/icon-instagram.svg"
+							alt="icon-instagram"
+						/>
+						<img src="assets/icon-twitter.svg" alt="icon-twitter" />
+					</div>
+				</section>
+			</div>
+		</footer>
 	</body>
 </html>

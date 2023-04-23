@@ -26,7 +26,7 @@
 		<main class="overflow-hidden">
 			<header class="pt-10 relative mb-40">
 				<img
-					class="hidden tablet:block -z-10 absolute -right-10 bottom-8 desktop:bottom-3 desktop:right-0"
+					class="hidden tablet:block -z-10 absolute -right-12 bottom-8 desktop:bottom-7 desktop:right-0"
 					src="/assets/bg-pattern-1.svg"
 					alt=""
 				/>
@@ -113,21 +113,36 @@
 				</div>
 			</section>
 		</main>
-		<footer>
+		<footer class="py-5">
 			<div class="container">
-				<section>
-					<img src="/assets/logo.svg" alt="equalizer" />
-					<p>
-						All rights reserved © Equalizer 2021 Have any problems?
-						Contact us via social media or email us at
-						equalizer@example.com
-					</p>
-					<div>
+				<section class="flex flex-col justify-between tablet:flex-row">
+					<div class="desktop:flex">
 						<img
-							src="assets/icon-facebook.svg"
-							alt="icon-facebook"
+							class="mb-8 desktop:mr-32"
+							src="/assets/logo.svg"
+							alt="equalizer"
+							style="width: 146px"
 						/>
+						<p class="mb-9 leading-26 tablet:w-2/5">
+							All rights reserved © Equalizer 2021 Have any
+							problems? Contact us via social media or email us at
+							<span class="font-bold">equalizer@example.com</span>
+						</p>
+					</div>
+					<div class="flex">
+						<svg
+							width="20"
+							height="20"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								class="hover:text-darkOrange"
+								d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0Z"
+								fill="#191826"
+							/>
+						</svg>
 						<img
+							class="mx-5 hover:bg-darkOrange"
 							src="assets/icon-instagram.svg"
 							alt="icon-instagram"
 						/>
